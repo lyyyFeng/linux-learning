@@ -5,6 +5,13 @@
 #include <unistd.h>
 #include <time.h>
 
+/*
+ * man who
+ * man -k utmp 
+ * man 5 utmp 
+ * 头文件内容在man 5 utmp中可以看到
+ * */
+
 voie show_info(struct utmp *utbuf);
 void show_time(time_t);
 
