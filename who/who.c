@@ -16,6 +16,7 @@ voie show_info(struct utmp *utbuf);
 void show_time(time_t);
 
 int main(int argc, char* argv[]) {
+    /* UTMP_FILE就是/var/run/utmp.在/usr/include/paths.h下 */
     int fd = open(UTMP_FILE, O_RDONLY);
     if(fd == -1) {
         perror(UTMP_FILE);
